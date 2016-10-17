@@ -20,8 +20,10 @@ void setup()
   delay(3000);
 
   // klik "Yes"
-  typeKey(KEY_LEFT_ARROW);
-  typeKey(KEY_RETURN);
+  Keyboard.press(KEY_LEFT_ALT);
+  delay(500);
+  Keyboard.press('y');
+  Keyboard.releaseAll();
   delay(1000);
 
   // add user
